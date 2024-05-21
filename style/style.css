@@ -131,11 +131,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-color: #F8F200;
-    border-top-left-radius: 80px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 80px;
-    border-bottom-left-radius: 0;
+    background-image: url(../images/header/more-block-bg.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 
 @media (max-width:650px) {
