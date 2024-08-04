@@ -28,7 +28,7 @@
     margin: 0 auto;
 }
 
-@media (min-width:320px) and (max-width: 1024px) {
+@media (min-width:320px) and (max-width: 1352px) {
     .content__conteiner {
         max-width: 952px;
         margin: 0 auto;
@@ -265,7 +265,7 @@
         width: auto;
         height: auto;
     }
-}
+} 
 
 .images-gallery__item {
     position: relative;
@@ -312,7 +312,7 @@
     }
 }
 
-@media (min-width:1280px) {
+@media (min-width:1353px) {
     .images-gallery__item-3 {
         grid-column: 2/3;
         grid-row: 1/3;
