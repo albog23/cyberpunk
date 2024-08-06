@@ -377,7 +377,10 @@
         grid-template-rows: repeat(5, auto);
     }
 }
-
+.widget {
+    width: 500px;
+    height: 800px;
+}
 
 .stock::before {
     content: url(../images/bg-stock-top.svg);
