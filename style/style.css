@@ -400,6 +400,20 @@
     height: 132px;
 }
 
+.stock-img__icon {
+    display: block;
+    height: 62px;
+}
+
+.stock-img__icon::before {
+    content: url(../images/stock/stock-icon.svg);
+    display: block;
+    width: 62px;
+    height: 62px;
+}
+
+
+
 @media (max-width:1570px) {
     .stock-title__icon::before {
         display: block;
@@ -450,6 +464,7 @@
 }
 
 .stock__img {
+    position: relative;
     display: flex;
     column-gap: 32px;
     justify-content: center;
@@ -459,6 +474,7 @@
 
 @media (max-width:650px) {
     .stock__img {
+        position: relative;
         grid-row: 1/2;
         grid-column: 1/2;
         display: flex;
