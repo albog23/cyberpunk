@@ -46,7 +46,7 @@
     .content__padding {
         padding-left: 12px;
         padding-right: 12px;
-    }    
+    }
 }
 
 
@@ -265,7 +265,7 @@
         width: auto;
         height: auto;
     }
-} 
+}
 
 .images-gallery__item {
     position: relative;
@@ -360,7 +360,7 @@
 
 .stock__inner {
     display: grid;
-    grid-template-columns:  1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
 }
 
@@ -377,6 +377,7 @@
         grid-template-rows: repeat(5, auto);
     }
 }
+
 .widget {
     width: 500px;
     height: 800px;
@@ -652,8 +653,36 @@
 
 .checkbox {
     align-self: flex-start;
+    padding-left: 24px;
 }
 
+.checkbox--no-defult-style {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+}
+
+.checkbox--castom-style {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #777777;
+    margin-left: -20px;
+    margin-top: 6.5px;
+}
+
+.checkbox--no-defult-style:checked+.checkbox--castom-style::before {
+    content: url(../images/stock/Rectangle\ 44.svg);
+    position: absolute;
+    top: -10.5px;
+    left: 1px;
+     
+    
+
+}
 .hp {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -679,14 +708,14 @@
     margin-bottom: 25px;
 }
 
-.hp__img{
-width: 100%;
-height: auto;
+.hp__img {
+    width: 100%;
+    height: auto;
 }
 
 .hp__partners-line {
-width: 100%;
-height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .section-description--black {
@@ -782,8 +811,10 @@ height: auto;
 @media (min-width:320px) and (max-width:1024px) {
 
     .buy {
-flex-direction: column;
-    };
+        flex-direction: column;
+    }
+
+    ;
 }
 
 .header-buy-list {
@@ -812,7 +843,9 @@ flex-direction: column;
         background-position: top center;
         background-size: 100% auto;
         object-fit: cover
-    };
+    }
+
+    ;
 }
 
 @media (min-width:320px) and (max-width:1024px) {
@@ -822,7 +855,9 @@ flex-direction: column;
         background-position: top center;
         background-size: 100% auto;
         flex-basis: 50vw;
-    };
+    }
+
+    ;
 }
 
 
@@ -834,7 +869,9 @@ flex-direction: column;
         background-position: top left;
         background-size: auto 100%;
         flex-basis: 33%
-    };
+    }
+
+    ;
 }
 
 
@@ -846,7 +883,7 @@ flex-direction: column;
     flex-basis: 50%;
 }
 
-.buy{
+.buy {
     background-color: #000000;
 }
 
@@ -857,8 +894,8 @@ flex-direction: column;
 
 @media (max-width:1024px) {
     .title-buy {
-       padding-top: 40px;
-    
+        padding-top: 40px;
+
     }
 }
 
@@ -907,7 +944,7 @@ flex-direction: column;
         flex-direction: column;
         gap: 25px;
         align-items: center;
-       
+
     }
 }
 
@@ -927,6 +964,7 @@ flex-direction: column;
     display: flex;
     gap: 32px;
 }
+
 @media (max-width:940px) {
     .footer-logo__list {
         flex-direction: column;

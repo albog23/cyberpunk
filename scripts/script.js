@@ -1,3 +1,5 @@
-let age = prompt ('Как тебя зовут?', 'напиши свое имя сюда');
-alert (age);
+let admin;
+let  name = 'Джон';
+name = admin;
 
+alert (admin)
