@@ -13,23 +13,6 @@
         rel="stylesheet">
     <title>Cyberpunk 2077</title>
     <meta name="description" content="Найт-Сити изменит тебя навсегда!">
-    <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();
-   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-   ym(98067845, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/98067845" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
 </head>
 
 <body>
@@ -168,7 +151,9 @@
                     <form class="stock__form" action="">
                         <input class="stock__input-text stock__form-text" type="text" placeholder="Как тебя зовут?">
                         <input class="stock__input-text stock__form-text" type="email" placeholder="Твой е-mail">
-                        <input class="stock__input-file stock__form-text" type="file" placeholder="Загрузите скриншот">
+                        <span class="stock__input-file--style">
+                            <input class="stock__input-file stock__form-text" type="file" placeholder="Загрузите скриншот">
+                        </span>
                         <button class="btn btn-form ">Отправить</button>
                         <label class="checkbox stock__form-text">
                             <input class="checkbox--no-defult-style" type="checkbox"> 
@@ -200,8 +185,9 @@
                 <div class="hp__inner content__padding">
                     <div class="hp__left">
                         <picture>
-                            <source srcset="images/hp/hp-screen-320.png" media="(max-width:320px)">
-                            <source srcset="images/hp/hp-screen-1024.png"  media="(max-width:1280px)">
+                            <source type="image/webp" srcset="images/hp/hp-screen-320 1x, images/hp/hp-screen-320@2x.webp 2x" media="(max-width: 320px)">
+                            <source type="image/webp" srcset="images/hp/hp-screen-1024.webp 1x, images/hp/hp-screen-1024@2x.webp 2x" media="(max-width:1280px)">
+                            <source type="image/webp" srcset="images/hp/hp-screen-1920.webp 1x, images/hp/hp-screen-1920@2x.webp 2x" media="(min-width:1281px)">
                             <img class="hp__img" src="images/hp/hp-screen-1920.png" width="624" height="430" alt="">
                         </picture>
                         <ul class="hp__partners-list">
@@ -273,9 +259,9 @@
                     </h2>
                     <p class="header-buy-list buy__title">В комплект входит:</p>
                     <ul class="section-list buy__list-advantage">
-                        <li class="section-list__items section-list__items--color">Яркие насыщенные цвета</li>
-                        <li class="section-list__items section-list__items--color">Кристальная четкость изображения</li>
-                        <li class="section-list__items section-list__items--color">Быстрые движения и плавный геймплей
+                        <li class="section-list__items buy__list-icon-1 section-list__items--color">Футляр с игровыми дисками</li>
+                        <li class="section-list__items buy__list-icon-2  section-list__items--color">Футляр с кодом для загрузки игры и дисками (pc)</li>
+                        <li class="section-list__items buy__list-icon-3  section-list__items--color">Справочник с информацией об игровом мире
                         </li>
                     </ul>
                     <p class="header-buy-list buy__title">Выберите платформу:</p>

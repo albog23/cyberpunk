@@ -634,6 +634,8 @@
     height: 120px;
 }
 
+
+
 @media (max-width:360px) {
     .stock__input-file {
         width: 296px;
@@ -679,8 +681,6 @@
     position: absolute;
     top: -10.5px;
     left: 1px;
-     
-    
 
 }
 .hp {
@@ -916,6 +916,27 @@
 
 .buy__list-advantage {
     margin-bottom: 70px;
+}
+
+.buy__list-icon-1::before {
+    content: url('../images/buy/buy-disk.svg');
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+.buy__list-icon-2::before {
+    content: url('../images/buy/buy-modal.svg');
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+.buy__list-icon-3::before {
+    content: url('../images/buy/img-icon-buy-modal.svg');
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 10px;
 }
 
 .buy-list-img {
